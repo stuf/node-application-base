@@ -23,6 +23,12 @@ Included:
 [babel]: https://github.com/babel/babel
 [vscode]: https://code.visualstudio.com/
 
+## Requirements
+
+ * [`yarn`][yarn] instead of `npm` (easy install on OSX: `brew update && brew install yarn`)
+
+[yarn]: https://yarnpkg.com/
+
 ## Getting started
 
 ```
