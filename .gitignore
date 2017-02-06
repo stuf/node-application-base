@@ -1,0 +1,15 @@
+# -- OSX
+.DS_Store
+
+# -- Node.js
+node_modules/
+
+# Code coverage
+coverage
+coverage.lcov
+.nyc_output
+
+# -- Generic
+*.log
+logs/
+dist/

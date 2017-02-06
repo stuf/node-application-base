@@ -1,0 +1,46 @@
+{
+  "name": "node-application-base",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:stuf/node-application-base.git",
+  "author": "Stefan Rimaila <stefan@rimaila.fi>",
+  "license": "MIT",
+  "scripts": {
+    "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "test": "nyc mocha"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-check-es2015-constants": "^6.22.0",
+    "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
+    "babel-plugin-transform-es2015-block-scoped-functions": "^6.22.0",
+    "babel-plugin-transform-es2015-block-scoping": "^6.22.0",
+    "babel-plugin-transform-es2015-classes": "^6.22.0",
+    "babel-plugin-transform-es2015-computed-properties": "^6.22.0",
+    "babel-plugin-transform-es2015-destructuring": "^6.22.0",
+    "babel-plugin-transform-es2015-duplicate-keys": "^6.22.0",
+    "babel-plugin-transform-es2015-for-of": "^6.22.0",
+    "babel-plugin-transform-es2015-function-name": "^6.22.0",
+    "babel-plugin-transform-es2015-literals": "^6.22.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.22.0",
+    "babel-plugin-transform-es2015-object-super": "^6.22.0",
+    "babel-plugin-transform-es2015-parameters": "^6.22.0",
+    "babel-plugin-transform-es2015-shorthand-properties": "^6.22.0",
+    "babel-plugin-transform-es2015-spread": "^6.22.0",
+    "babel-plugin-transform-es2015-sticky-regex": "^6.22.0",
+    "babel-plugin-transform-es2015-template-literals": "^6.22.0",
+    "babel-plugin-transform-es2015-unicode-regex": "^6.22.0",
+    "babel-polyfill": "^6.22.0",
+    "babel-register": "^6.22.0",
+    "chai": "^3.5.0",
+    "codecov": "^1.0.1",
+    "cross-env": "^3.1.4",
+    "eslint": "^3.15.0",
+    "mocha": "^3.2.0",
+    "nyc": "^10.1.2"
+  },
+  "dependencies": {
+    "ramda": "^0.23.0"
+  }
+}
