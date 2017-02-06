@@ -7,7 +7,11 @@
   "license": "MIT",
   "scripts": {
     "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
-    "test": "nyc mocha"
+    "test": "nyc mocha",
+    "test:watch": "npm run test -- --watch",
+    "git:push": "git pull origin \"$(git-branch-current 2> /dev/null)\" && git push origin \"$(git-branch-current 2> /dev/null)\"",
+    "push": "npm run lint && npm run test && npm run git:push",
+    "build": "cross-env NODE_ENV=production echo 'Not yet implemented'; exit 1"
   },
   "devDependencies": {
     "babel-cli": "^6.22.2",
